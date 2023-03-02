@@ -15,10 +15,6 @@ i18n
       order: ['localStorage', 'cookie'],
       caches: ['localStorage', 'cookie']
     },
-    backend: {
-      loadPath: "news-react-ts/locales/{{lng}}/translation.json",
-      crossDomain: true
-    },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     }
