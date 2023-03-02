@@ -43,11 +43,16 @@ export const userSlice = createSlice({
       state.username = '';
       localStorage.removeItem('user');
       toast.info('Logged Out.');
+    },
+    changeLng: (state, action) => {
+      const { translator, language } = action.payload;
+
+      translator.changeLanguage(language);
     }
   },
 });
 
-export const { authorize, isAuthorized, logOut } = userSlice.actions;
+export const { authorize, isAuthorized, logOut, changeLng } = userSlice.actions;
 
 export const selectNews = (state: RootState) => state.news;
 

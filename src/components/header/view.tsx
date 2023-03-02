@@ -19,6 +19,7 @@ import { useAppDispatch } from '../../store/hooks';
 import { searchArticle } from '../../store/slices/newsSlice';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { changeLng } from '../../store/slices/userSlice';
 
 const navItems = ['Home', 'News', 'Profile'];
 const drawerWidth = 240;
@@ -38,7 +39,7 @@ export function Header(props: any) {
   };
 
   const changeLanguage = (language: string) => {
-    i18n.changeLanguage(language);
+    dispatch(changeLng({ translator: i18n, language }));
   };
 
   const drawer = (
