@@ -27,7 +27,7 @@ export function Header(props: any) {
   const { isLoggedIn } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const dispatch = useAppDispatch();
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('ns1');
 
   const onChangeHandler = (e: any) => {
     dispatch(searchArticle({ value: e.target.value }));
