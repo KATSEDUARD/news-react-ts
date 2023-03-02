@@ -1,6 +1,7 @@
 {
   "name": "news-react-tz",
   "version": "0.1.0",
+  "homepage": "https://katseduard.github.io/news-react-ts",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -37,6 +38,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -62,6 +65,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.191",
-    "@types/react-highlight-words": "^0.16.4"
+    "@types/react-highlight-words": "^0.16.4",
+    "gh-pages": "^5.0.0"
   }
 }
