@@ -15,6 +15,9 @@ i18n
       order: ['localStorage', 'cookie'],
       caches: ['localStorage', 'cookie']
     },
+    backend: {
+      loadPath: '/news-react-ts/locales/{{lng}}/translation.json'
+    },
     interpolation: {
       escapeValue: false,
     }
