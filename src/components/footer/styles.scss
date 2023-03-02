@@ -1,0 +1,16 @@
+.footer {
+    background-color: #1976d2 !important;
+    color: white;
+    margin-top: 16px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    .footer-link {
+        color: white;
+        
+        span {
+            font-size: 22px;
+        }
+    }
+}

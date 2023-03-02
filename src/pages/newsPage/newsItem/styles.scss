@@ -1,0 +1,30 @@
+.card {
+    text-align: justify;
+
+    &-date {
+        font-size: 14px;
+        opacity: .6;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &-title {
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &-description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    &-read-more {
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+
+    &-content {
+        padding: 16px;
+    }
+}
